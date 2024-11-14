@@ -1,38 +1,51 @@
-.App {
+/* Main container */
+div {
+  font-family: Arial, sans-serif;
   text-align: center;
+  padding: 20px;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Title styling */
+h1 {
+  color: #3c3e44;
+  margin-bottom: 20px;
+  font-size: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Dropdown styling */
+select {
+  padding: 10px;
+  font-size: 1em;
+  margin: 10px 0 20px;
+  border: 1px solid #3c3e44;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #3c3e44;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+select:focus {
+  outline: none;
+  border-color: #8bc34a;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #8bc34a;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
